@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
-app.use(adminRoutes);
+app.use('/admin',adminRoutes);
 app.use(shopRoutes);
 
 
